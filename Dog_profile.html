@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Tracking</title>
+    <style>
+        body {
+            background-image: url('dog-theme-background.jpg'); 
+            background-repeat: repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            background-color: #333;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="time"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            background-image: url('pawprint.png'); /
+            background-repeat: no-repeat;
+            background-size: 20px;
+            padding-left: 30px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #555;
+        }
+    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Records</title>
+</head>
+<body>
+    <h1>Profile  <span style='font-size:100px;'>&#128198;</span></h1>
+    <p>Let others know your dog</p>
+    
+    <form action="save_dog_profile.php" method="post" enctype="multipart/form-data">
+        <label for="dogName">Dog's Name:</label>
+        <input type="text" id="dogName" name="DogName" required><br><br>
+        
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required><br><br>
+
+       <label for="breed">Gender:</label>
+        <input type="text" id="gender" name="gender" required><br><br>
+        
+        <label for="breed">Breed:</label>
+        <input type="text" id="breed" name="breed" required><br><br>
+        
+        <label for="dogPhoto">Dog's Photo:</label>
+        <input type="file" id="dogPhoto" name="add yourdogsphoto" accept="image/*" required><br><br>
+        
+        <label for="bio">Dog's Bio:</label><br>
+        <textarea id="bio" name="bio" rows="10" cols="150" required></textarea><br><br>
+        
+        <input type="submit" value="Create Dog Profile">
+    </form>
+    
+    <a href="homepage.html">HomePage  </a>| <a href="index.html">Meal tracking </a> | <a href="Dog_profile.html">Dog Profile</a> | <a href="dog_notes.html">Dog Health Notes</a> | <a href="dog_tracking.html">Dog Tracking</a> | <a href="medical_records.html">Medical Records</a> | <a href="activity_monitoring.html">Activity Monitoring</a> | <a href="weight_monitoring.html">Weight Monitoring</a>
+</body>
+</html>
